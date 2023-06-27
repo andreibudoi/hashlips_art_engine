@@ -30,16 +30,16 @@ If you are cloning the project then run this first, otherwise you can download t
 git clone https://github.com/HashLips/hashlips_art_engine.git
 ```
 
-Go to the root of your folder and run this command if you have yarn installed.
-
-```sh
-yarn install
-```
-
-Alternatively you can run this command if you have node installed.
+Go to the root of your folder and run this command
 
 ```sh
 npm install
+```
+
+If the installation fails on Apple M1/M2 because of `node-canvas` try this
+
+```sh
+arch -arm64 brew install pkg-config cairo pango libpng jpeg giflib librsvg
 ```
 
 ## Usage ℹ️
